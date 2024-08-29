@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hepta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+</head>
+	<body>
+	
+	<div class="page">
+    <nav id="colorlib-main-nav" role="navigation">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+      <div class="js-fullheight colorlib-table">
+        <!-- <div class="img"></div> -->
+        <div class="colorlib-table-cell js-fullheight">
+          <div class="row no-gutters">
+            <div class="col-md-12 text-center">
+              <ul>
+                <li class="active"><a href="index.html"><span >Home</span></a></li>
+                <li><a href="hotels.html"><span >Hotels</span></a></li>
+                <li><a href="about.html"><span >About Us</span></a></li>
+                <li><a href="gallery.html"><span >Gallery</span></a></li>
+                <li><a href="news.html"><span >Blog</span></a></li>
+                <li><a href="contact.html"><span >Contact</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="colorlib-page">
+      <header>
+      	<div class="container" >
+	        <div class="colorlib-navbar-brand" >
+	          <a class="colorlib-logo" href="index.html">Hepta</a>
+	        </div>
+	        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+        </div>
+      </header>
+
+      <section class="hero-wrap js-fullheight" style="background-image: url('images/gallery.jpg')">
+	      <div class="container px-0">
+	        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+	          <div class="col-md-12 ftco-animate text-center">
+	          	<div class="desc">
+                <h1>Gallery</h1><br>
+                <h3>A free template by <span><a href="https://colorlib.com" target="_blank" style="color: gray; text-decoration: none;">Colorlib</a></span>. Download and share!</h3>
+            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+    </div>
+  </div>
+
+  <section class="photos">
+    <div class="gallery">
+        <div class="gallery-item"><img src="images/slider4.jpg" alt="Image 1" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/resort.jpg" alt="Image 2" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/interior.jpg" alt="Image 3" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/resort.jpg" alt="Image 4" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/slider2.jpg" alt="Image 5" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/slider4.jpg" alt="Image 6" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/slider5.jpg" alt="Image 7" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/gallery.jpg" alt="Image 8" onclick="openModal(this)"></div>
+    </div>
+    <div class="gallery-group">
+        <div class="gallery-group-item"><img src="images/slider6.jpg" alt="Image 10" onclick="openModal(this)"></div>
+        <div class="gallery-group-item"><img src="images/slider3.jpg" alt="Image 11" onclick="openModal(this)"></div>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item"><img src="images/slider1.jpg" alt="Image 1" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/interior.jpg" alt="Image 2" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/resort.jpg" alt="Image 3" onclick="openModal(this)"></div>
+        <div class="gallery-item"><img src="images/slider4.jpg" alt="Image 4" onclick="openModal(this)"></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="">
+        </div>
+    </div>
+
+    <script>
+        function openModal(img) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</section>
+      <!-- Footer Area -->
+      <footer id="footer" class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-footer f-link">
+                  <h2>Quick Links</h2>
+                  <div class="row">
+                    <div class="col-lg-9 col-md-6 col-12">
+                      <ul>
+                                              <li><a href="#">About Us</a></li>
+                                              <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Room</a></li>
+                        
+                      </ul>
+                    </div>
+                                       
+                  </div>
+                </div>
+              </div>
+                          <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-footer f-link">
+                  <h2>Support</h2>
+                  <div class="row">
+                    <div class="col-lg-9 col-md-6 col-12">
+                      <ul>
+                        <li><a href="#">Our Location</a></li>
+                                              <li><a href="#">The Host</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Restaurant</a></li>		
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-footer">
+                  <h2>Contact Info</h2>
+                                  <div class="contact-item">
+                                      <h6>Address</h6>
+                                      <p>98 West 21th Street, Suite 721 New York NY 10016</p>
+                                  </div>
+                                  <div class="contact-item">
+                                      <h6>Phone :</h6>
+                  <p>(+1) 435 3533</p>
+                                  </div>
+                                  <div class="contact-item">
+                                  <h6>Email </h6>
+                  <p> info@yourdomain.com</p>
+                                  </div>				
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-footer">
+                  <h2>Subscribe</h2>
+                  <p>Sign up for our newsletter</p>
+                  <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                    <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Your email address'" required="" type="email">
+                    <button class="button"><i class="icofont icofont-paper-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Copyright -->
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="copyright-content">
+                  <p>Copyright © 2024 All rights reserved | This template is made with  by Colorlib</p>
+                </div>
+                <br><br><br>
+                <div class="single-footer">
+                  <!-- Social -->
+                  <ul class="social">
+                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                    <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                    <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                    <li><a href="#"><i class="icofont-vimeo"></i></a></li>
+                    <li><a href="#"><i class="icofont-pinterest"></i></a></li>
+                  </ul>
+                  <!-- End Social -->
+                </div>
+                <br><br><br><br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ End Copyright -->
+      </footer>
+		<!--/ End Footer Area -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/video-modal.js"></script>
+
+	</body>
+</html>
+
