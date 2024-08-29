@@ -1,0 +1,500 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'nonce-randomNonceValue';">
+    <meta name="description" content="Classic Comfort offers stylish and comfortable furniture, from wooden chairs to modern sofas, that fits your unique taste and lifestyle. Explore our new arrivals and exclusive collections today.">
+
+    <!-- Correct Font URL -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
+
+      <!-- Preconnect -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+       <!-- Asynchronously loaded CSS -->
+       <link id="bootstrap-css" rel="stylesheet" href="css/bootstrap.min.css" media="print">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="print" onload="this.media='all'"> -->
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
+
+    <title>Furniture</title>
+    
+    <!-- Preload CSS Files -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/Style.css" as="style">
+    
+    <!-- Fallback for older browsers -->
+    <noscript>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/Style.css">
+    </noscript>
+
+    <!-- Load CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+
+    <section id="home" class="home section">
+        <nav>
+            <div class="logo">
+                <picture>
+                    <source srcset="images/webp/logo.webp" type="image/webp">
+                    <img src="images/logo.jpg" alt="logo" loading="lazy">
+                </picture>
+                <h1>Classic Comfort</h1>
+            </div>
+            <ul>
+                <li><a href="#home" class="text-primary5">Home</a></li>
+                <li><a href="#new-arrivals" class="text-primary5">New Arrivals</a></li>
+                <li><a href="#accordion" class="text-primary5">FAQS</a></li>
+                <li><a href="#newsletter" class="text-primary5">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+        <div class="menubar">
+            <ul>
+                <li><a href="#home" class="text-primary5">Home</a></li>
+                <li><a href="#new-arrivals" class="text-primary5">New Arrivals</a></li>
+                <li><a href="#accordion" class="text-primary5">FAQS</a></li>
+                <li><a href="#newsletter" class="text-primary5">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="slider">
+                <div class="slide active" style="background-image: url('images/webp/slider3.webp');">
+                    <div class="overlay-text">
+                        <h2>Welcome to Our Store</h2>
+                        <p>Discover the latest trends and styles.</p>
+                        <a href="#new-arrivals" class="btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/webp/slider6.webp');"></div>
+                <div class="slide" style="background-image: url('images/webp/slider7.webp')"></div>
+                <div class="slide" style="background-image: url('images/webp/slider1.webp');"></div>
+                <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+                <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-arrivals" class="new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <h2>new arrivals</h2>
+            </div><!--/.section-header-->
+            <div class="new-arrivals-content">
+                <div class="row">
+                    <!-- Repeat the following block for each product -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <picture>
+                                    <source srcset="images/webp/arrivals2.webp" type="image/webp">
+                                    <img src="images/arrivals2.png" alt="Wooden chair on sale for $65.00" loading="lazy">
+                                </picture>
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#home">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#home">wooden chair</a></h3>
+                            <p class="arrival-product-price">$65.00</p>
+                            <button class="viewDetailBtn" role="button">View Detail</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Wooden Chair</h4>
+                                    <p><span>Description: </span>This beautifully crafted wooden chair is made from high-quality solid oak and is very comfortable.</p>
+                                    <p><span>Material:</span> Solid Oak Wood</p>
+                                    <p><span>Price :</span> $65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <picture>
+                                    <source srcset="images/webp/arrivals2.webp" type="image/webp">
+                                    <img src="images/arrivals2.png" alt="Wooden chair on sale for $65.00" loading="lazy">
+                                </picture>
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#home">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#home">wooden chair</a></h3>
+                            <p class="arrival-product-price">$65.00</p>
+                            <button class="viewDetailBtn" role="button">View Detail</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Wooden Chair</h4>
+                                    <p><span>Description: </span>This beautifully crafted wooden chair is made from high-quality solid oak and is very comfortable.</p>
+                                    <p><span>Material:</span> Solid Oak Wood</p>
+                                    <p><span>Price :</span> $65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <picture>
+                                    <source srcset="images/webp/arrivals3.webp" type="image/webp">
+                                    <img src="images/arrivals3.png" alt="Wooden chair on sale for $65.00" loading="lazy">
+                                </picture>
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#home">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#home">wooden chair</a></h3>
+                            <p class="arrival-product-price">$65.00</p>
+                            <button class="viewDetailBtn" role="button">View Detail</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Wooden Chair</h4>
+                                    <p><span>Description: </span>This beautifully crafted wooden chair is made from high-quality solid oak and is very comfortable.</p>
+                                    <p><span>Material:</span> Solid Oak Wood</p>
+                                    <p><span>Price :</span> $65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <picture>
+                                    <source srcset="images/webp/arrivals4.webp" type="image/webp">
+                                    <img src="images/arrivals4.png" alt="Wooden chair on sale for $65.00" loading="lazy">
+                                </picture>
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#home">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#home">wooden chair</a></h3>
+                            <p class="arrival-product-price">$65.00</p>
+                            <button class="viewDetailBtn" role="button">View Detail</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Wooden Chair</h4>
+                                    <p><span>Description: </span>This beautifully crafted wooden chair is made from high-quality solid oak and is very comfortable.</p>
+                                    <p><span>Material:</span> Solid Oak Wood</p>
+                                    <p><span>Price :</span> $65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <picture>
+                                    <source srcset="images/webp/arrivals5.webp" type="image/webp">
+                                    <img src="images/arrivals5.png" alt="Wooden chair on sale for $65.00" loading="lazy">
+                                </picture>
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#home">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#home">wooden chair</a></h3>
+                            <p class="arrival-product-price">$65.00</p>
+                            <button class="viewDetailBtn" role="button">View Detail</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Wooden Chair</h4>
+                                    <p><span>Description: </span>This beautifully crafted wooden chair is made from high-quality solid oak and is very comfortable.</p>
+                                    <p><span>Material:</span> Solid Oak Wood</p>
+                                    <p><span>Price :</span> $65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <picture>
+                                    <source srcset="images/webp/arrivals6.webp" type="image/webp">
+                                    <img src="images/arrivals6.png" alt="Wooden chair on sale for $65.00" loading="lazy">
+                                </picture>
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#home">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#home">wooden chair</a></h3>
+                            <p class="arrival-product-price">$65.00</p>
+                            <button class="viewDetailBtn" role="button">View Detail</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Wooden Chair</h4>
+                                    <p><span>Description: </span>This beautifully crafted wooden chair is made from high-quality solid oak and is very comfortable.</p>
+                                    <p><span>Material:</span> Solid Oak Wood</p>
+                                    <p><span>Price :</span> $65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <picture>
+                                    <source srcset="images/webp/arrivals7.webp" type="image/webp">
+                                    <img src="images/arrivals7.png" alt="Wooden chair on sale for $65.00" loading="lazy">
+                                </picture>
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#home">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#home">wooden chair</a></h3>
+                            <p class="arrival-product-price">$65.00</p>
+                            <button class="viewDetailBtn" role="button">View Detail</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Wooden Chair</h4>
+                                    <p><span>Description: </span>This beautifully crafted wooden chair is made from high-quality solid oak and is very comfortable.</p>
+                                    <p><span>Material:</span> Solid Oak Wood</p>
+                                    <p><span>Price :</span> $65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <picture>
+                                    <source srcset="images/webp/arrivals8.webp" type="image/webp">
+                                    <img src="images/arrivals8.png" alt="Wooden chair on sale for $65.00" loading="lazy">
+                                </picture>
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#home">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#home">wooden chair</a></h3>
+                            <p class="arrival-product-price">$65.00</p>
+                            <button class="viewDetailBtn" role="button">View Detail</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Wooden Chair</h4>
+                                    <p><span>Description: </span>This beautifully crafted wooden chair is made from high-quality solid oak and is very comfortable.</p>
+                                    <p><span>Material:</span> Solid Oak Wood</p>
+                                    <p><span>Price :</span> $65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more products similarly -->
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section>
+
+    <div id="accordion" class="accordion" style="background-color:rgb(250, 250, 250)" >
+        <div class="container">
+            <div class="section-header">
+                <h2>FAQS</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="accordion-item">
+                        <button class="accordion-button">1. What types of furniture do you offer?</button>
+                        <div class="accordion-content">
+                           <p>We offer a wide range of furniture including sofas, beds, dining tables, chairs, wardrobes, and office furniture.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-button">2. Do you offer custom furniture designs?</button>
+                        <div class="accordion-content">
+                            <p>Yes, we offer custom furniture design services. You can collaborate with our designers to create pieces tailored to your specific needs and preferences.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-button">3. How do I place an order?</button>
+                        <div class="accordion-content">
+                            <p>You can place an order directly on our website by selecting your desired items and proceeding to checkout.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-button">4. What payment methods do you accept?</button>
+                        <div class="accordion-content">
+                            <p>We accept various payment methods including credit/debit cards, PayPal, and bank transfers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-container">
+                        <img src="images/slider3.jpg" alt="Description" loading="lazy">
+                    </div>
+                    <!-- <picture>
+                        <source srcset="images/webp/slider3.webp" type="image/webp">
+                        <img src="images/slider3.jpg" alt="image">
+                    </picture> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="newsletter"  class="newsletter" style="background-color: black;">
+        <div class="container" >
+            <div class="hm-footer-details">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="hm-footer-widget">
+                            <div class="hm-foot-title" >
+                                <h1>aboutus</h1>
+                                <p>Welcome to Classic Comfort, where style meets comfort. Our passion lies in transforming houses into homes with furniture that reflects your unique taste and lifestyle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-6 col-xs-12">
+                        <div class="hm-footer-widget">
+                            <div class="hm-foot-title">
+                                <h1>collections</h1>
+                            </div><!--/.hm-foot-title-->
+                            <div class="hm-foot-menu">
+                                <ul>
+                                    <li><a href="#home" >wooden chair</a></li><!--/li-->
+                                    <li><a href="#home" >royal cloth sofa</a></li><!--/li-->
+                                    <li><a href="#home" >accent chair</a></li><!--/li-->
+                                    <li><a href="#home" >bed</a></li><!--/li-->
+                                    <li><a href="#home" >hanging lamp</a></li><!--/li-->
+                                </ul><!--/ul-->
+                            </div><!--/.hm-foot-menu-->
+                        </div><!--/.hm-footer-widget-->
+                    </div><!--/.col-->
+                    <div class=" col-md-3 col-sm-6 col-xs-12">
+                        <div class="hm-footer-widget">
+                            <div class="hm-foot-title">
+                                <h1>my accounts</h1>
+                            </div><!--/.hm-foot-title-->
+                            <div class="hm-foot-menu">
+                                <ul>
+                                    <li><a href="#home">my account</a></li><!--/li-->
+                                    <li><a href="#home">wishlist</a></li><!--/li-->
+                                    <li><a href="#home">Community</a></li><!--/li-->
+                                    <li><a href="#home">history</a></li><!--/li-->
+                                    <li><a href="#home">my cart</a></li><!--/li-->
+                                </ul><!--/ul-->
+                            </div><!--/.hm-foot-menu-->
+                        </div><!--/.hm-footer-widget-->
+                    </div><!--/.col-->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="hm-footer-widget">
+                            <div class="hm-foot-title" >
+                                <h1>Contact US</h1>
+                                <p>Email : comfortclassic@gmail.com</p>
+                                <p>Phone : 03546758768</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Files -->
+    <script src="js/scripts.js" defer></script>
+
+</body>
+</html>
